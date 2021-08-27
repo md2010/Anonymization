@@ -7,10 +7,11 @@
         mc:Ignorable="d"
         Title="PermutationWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox Name="comboBox" ItemsSource="{Binding Attributes}" SelectedItem="{Binding SelectedAttribute}" HorizontalAlignment="Left" Margin="140,191,0,0" VerticalAlignment="Top" Width="140" Height="35"/>
-        <Label Content="Odaberi atribut" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top" Width="130" FontSize="16"/>
+        <ComboBox Name="comboBox" ItemsSource="{Binding Attributes}" SelectedItem="{Binding SelectedAttribute}" HorizontalAlignment="Left" Margin="31,165,0,0" VerticalAlignment="Top" Width="140" Height="35"/>
+        <Label Content="Odaberi atribut" HorizontalAlignment="Left" Margin="31,129,0,0" VerticalAlignment="Top" Width="130" FontSize="16"/>
         <DataGrid Name="dataGrid" Margin="305,10,10,94"/>
         <Button Content="Primjeni" Click="ButtonApply_Click" HorizontalAlignment="Left" Margin="75,269,0,0" VerticalAlignment="Top" Height="39" Width="107" Background="#FFC3A8A8"/>
         <Button Content="Spremi" Click="ButtonSave_Click" HorizontalAlignment="Left" Margin="623,368,0,0" VerticalAlignment="Top" Height="39" Width="111" Background="#FFA9CFB0"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="996,176,0,0" VerticalAlignment="Top" Width="0"/>
     </Grid>
 </Window>

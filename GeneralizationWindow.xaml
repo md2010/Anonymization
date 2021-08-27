@@ -12,7 +12,7 @@
         <Label Content="Step" HorizontalAlignment="Left" Margin="83,177,0,0" VerticalAlignment="Top" Width="75" FontSize="14"/>
         <TextBox Name="tbStep" HorizontalAlignment="Left" Margin="201,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Height="35"/>
         <Button Content="Primjeni" Click="ButtonApply_Click" HorizontalAlignment="Left" Margin="140,285,0,0" VerticalAlignment="Top" Height="49" Width="110" Background="#FFC3A8A8"/>
-        <DataGrid Name="dataGrid" ItemsSource="{Binding}" Margin="400,0,0,153"/>
+        <DataGrid Name="dataGrid" ItemsSource="{Binding}" Margin="390,10,10,143"/>
         <Button Content="Spremi" Click="ButtonSave_Click" HorizontalAlignment="Left" Margin="637,348,0,0" VerticalAlignment="Top" Width="110" Height="49" Background="#FFA9CFB0"/>
 
     </Grid>

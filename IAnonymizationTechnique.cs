@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Anonyimization
 {
-    interface AnonymizationTechnique
+    interface IAnonymizationTechnique
     {
         public void apply();
     }

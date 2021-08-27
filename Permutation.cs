@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Anonyimization
 {
-    class Permutation : AnonymizationTechnique
+    class Permutation : IAnonymizationTechnique
     {
         private AnonymizationTechniquesManager manager;
         private string[] permutatedValues;

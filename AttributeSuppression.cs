@@ -5,7 +5,7 @@ using System.Data;
 
 namespace Anonyimization
 {
-    class AttributeSuppression : AnonymizationTechnique
+    class AttributeSuppression : IAnonymizationTechnique
     {
         private AnonymizationTechniquesManager manager;
         public AttributeSuppression(AnonymizationTechniquesManager manager)

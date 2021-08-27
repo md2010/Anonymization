@@ -1,0 +1,23 @@
+﻿<Window x:Class="Anonyimization.PerturbationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Anonyimization"
+        mc:Ignorable="d"
+        Title="PerturbationWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox ItemsSource="{Binding Attributes}" SelectedItem="{Binding SelectedAttribute}" HorizontalAlignment="Left" Margin="201,101,0,0" VerticalAlignment="Top" Width="154" Height="33"/>
+        <Label Content="Odaberi atribut" HorizontalAlignment="Left" Margin="83,101,0,0" VerticalAlignment="Top" Width="113" FontSize="14"/>
+        <Label Content="Odaberi bazu" HorizontalAlignment="Left" Margin="83,177,0,0" VerticalAlignment="Top" Width="100" FontSize="14"/>
+        <ComboBox SelectionChanged="cbBase_SelectionChanged" HorizontalAlignment="Left" Margin="201,182,0,0" VerticalAlignment="Top" Width="154" Name="cbBase" Foreground="#FF1B1A1A" Height="35">
+            <ComboBoxItem>0.5</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>5</ComboBoxItem>
+            <ComboBoxItem>10</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Primjeni" Name="btnApply" Click="btnApply_Click" HorizontalAlignment="Left" Margin="140,285,0,0" VerticalAlignment="Top" Height="49" Width="110" Background="#FFC3A8A8"/>
+        <DataGrid Name="dataGrid" ItemsSource="{Binding}" Margin="390,10,10,143"/>
+        <Button Name="btnSave" Content="Spremi" Click="btnSave_Click" HorizontalAlignment="Left" Margin="637,348,0,0" VerticalAlignment="Top" Width="110" Height="49" Background="#FFA9CFB0"/>
+    </Grid>
+</Window>

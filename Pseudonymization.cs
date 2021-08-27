@@ -8,7 +8,7 @@ using System.Security.Cryptography;
 
 namespace Anonyimization
 {
-    class Pseudonymization : AnonymizationTechnique
+    class Pseudonymization : IAnonymizationTechnique
     {
         private AnonymizationTechniquesManager manager;
         private string[] values;

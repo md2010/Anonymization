@@ -6,18 +6,22 @@
         xmlns:local="clr-namespace:Anonyimization"
         mc:Ignorable="d"
         Title="AnonymizationTechniquesWindow1" Height="450" Width="800">
-    <Grid Background="Beige">
-        <Label Content="Odaberi tehniku anonimizacije" HorizontalAlignment="Left" Margin="197,29,0,0" VerticalAlignment="Top" Width="234" FontSize="16"/>
-        <Button Content="Generalizacija" Click="ButtonGeneralization_Click" HorizontalAlignment="Left" Margin="230,75,0,0" VerticalAlignment="Top" FontSize="16" Height="39" Width="168" Background="#FFDED6CC"/>
-        <Button Content="Uklanjanje atributa" Click="ButtonAttributeSuppression_Click" HorizontalAlignment="Left" Margin="230,129,0,0" VerticalAlignment="Top" FontSize="16" Height="40" Width="168" Background="#FFDED6CC"/>
-        <Button Content="Maskiranje" Click="ButtonMasking_Click" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="36" Width="168" Margin="230,185,0,0" Background="#FFDED6CC"/>
-        <Button Content="Zamjena (permutacija)" Click="ButtonPermutation_Click"  HorizontalAlignment="Left" Margin="230,239,0,0" VerticalAlignment="Top" FontSize="16" Height="39" Width="168" Background="#FFDED6CC"/>
-        <Button Content="Početna" Click="ButtonHome_Click" HorizontalAlignment="Left" Margin="37,356,0,0" VerticalAlignment="Top" Width="106" Height="51" FontSize="14" Background="#FFC3A8A8"/>
-        <Button Content="Uklanjanje zapisa" Click="ButtonRecordSuppression_Click" HorizontalAlignment="Left" Margin="230,297,0,0" VerticalAlignment="Top" Height="39" Width="168" FontSize="16" Background="#FFDED6CC"/>
-        <Button Content="K-anonimnost" Click="ButtonKAnonyimity_Click" HorizontalAlignment="Left" Margin="582,75,0,0" VerticalAlignment="Top" Width="116" Height="38" FontSize="16" Background="#FFDED6CC"/>
-        <Label Content="Algoritmi" HorizontalAlignment="Left" Margin="582,29,0,0" VerticalAlignment="Top" Width="149" FontSize="16"/>
-        <Button Content="Dalje" Click="ButtonNext_Click" HorizontalAlignment="Left" Margin="640,356,0,0" VerticalAlignment="Top" Width="106" Height="48" FontSize="14" Background="#FFA9CFB0"/>
-        <Button Content="Pseudonimizacija" Click="ButtonPseudonymization_Click" HorizontalAlignment="Left" Margin="230,354,0,0" VerticalAlignment="Top" Height="39" Width="168" FontSize="16" Background="#FFDED6CC"/>
+    <Grid Background="#FF222527">
+
+        <Label Content="Tehnike anonimizacije" HorizontalAlignment="Left" Margin="158,22,0,0" VerticalAlignment="Top" Width="190" FontSize="18" Background="{x:Null}"/>
+        <Button Content="Generalizacija" Click="ButtonGeneralization_Click" HorizontalAlignment="Left" Margin="65,62,0,0" VerticalAlignment="Top" FontSize="16" Height="40" Width="168" Background="#FFDED6CC" BorderBrush="#FFE0D0D0"/>
+        <Button Content="Uklanjanje atributa" Click="ButtonAttributeSuppression_Click" HorizontalAlignment="Left" Margin="255,62,0,0" VerticalAlignment="Top" FontSize="16" Height="40" Width="168" Background="#FFDED6CC"/>
+        <Button Content="Maskiranje" Click="ButtonMasking_Click" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="40" Width="168" Margin="65,119,0,0" Background="#FFDED6CC"/>
+        <Button Content="Zamjena (permutacija)" Click="ButtonPermutation_Click"  HorizontalAlignment="Left" Margin="255,119,0,0" VerticalAlignment="Top" FontSize="16" Height="40" Width="168" Background="#FFDED6CC"/>
+        <Button Content="Početna" Click="ButtonHome_Click" HorizontalAlignment="Left" Margin="158,356,0,0" VerticalAlignment="Top" Width="106" Height="51" FontSize="14" Background="#FFC3A8A8" RenderTransformOrigin="1.533,0.77"/>
+        <Button Content="Uklanjanje zapisa" Click="ButtonRecordSuppression_Click" HorizontalAlignment="Left" Margin="65,177,0,0" VerticalAlignment="Top" Height="40" Width="168" FontSize="16" Background="#FFDED6CC"/>
+        <Button Content="K-anonimnost" Click="ButtonKAnonyimity_Click" HorizontalAlignment="Left" Margin="569,61,0,0" VerticalAlignment="Top" Width="116" Height="38" FontSize="16" Background="#FFDED6CC"/>
+        <Label Content="Mjerila anonimiziacije" HorizontalAlignment="Left" Margin="536,22,0,0" VerticalAlignment="Top" Width="182" FontSize="18" Background="{x:Null}"/>
+        <Button Content="Dalje" Click="ButtonNext_Click" HorizontalAlignment="Left" Margin="537,356,0,0" VerticalAlignment="Top" Width="106" Height="48" FontSize="14" Background="#FFA9CFB0"/>
+        <Button Content="Pseudonimizacija" Click="ButtonPseudonymization_Click" HorizontalAlignment="Left" Margin="255,177,0,0" VerticalAlignment="Top" Height="40" Width="168" FontSize="16" Background="#FFDED6CC"/>
+        <Button Name="btnRetrieveColumn" Click="btnRetrieveColumn_Click" Content="Vrati originalne vrijednosti" HorizontalAlignment="Center" Margin="0,356,0,0" VerticalAlignment="Top" Width="185" Height="48" FontSize="14" Background="#FFDED6CC"/>
+        <Button Name="btnLDiversity" Click="btnLDiversity_Click" Content="L-ranolikost" HorizontalAlignment="Left" Margin="569,121,0,0" VerticalAlignment="Top" Width="116" Height="38" FontSize="16" Background="#FFDED6CC"/>
+        <Button Name="btnPerturbation" Click="btnPerturbation_Click" Content="Perturbacija" HorizontalAlignment="Left" Margin="158,237,0,0" VerticalAlignment="Top" Width="170" Height="40" Background="#FFDED6CC" FontSize="16"/>
 
     </Grid>
 </Window>

@@ -8,7 +8,7 @@
         Title="KAnonymityWindow" Height="450" Width="800">
     <Grid>
         <Label Content="Odaberi kvazi-identifikatore" HorizontalAlignment="Left" Margin="23,42,0,0" VerticalAlignment="Top" Width="182" FontSize="14"/>
-        <ListBox ItemsSource="{Binding CheckBoxList}" Margin="32,82,508,217">
+        <ListBox ItemsSource="{Binding CheckBoxList}" Margin="32,82,508,217" Foreground="#FFFDEFEF">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <CheckBox Content="{Binding Attribute}" IsChecked="{Binding IsSelected}" Margin="5 5 0 0"/>

@@ -7,7 +7,7 @@ using System.Data;
 
 namespace Anonyimization
 {
-    class Generalization : AnonymizationTechnique
+    class Generalization : IAnonymizationTechnique
     {
         private AnonymizationTechniquesManager manager;
         private int[] values;
@@ -23,9 +23,8 @@ namespace Anonyimization
         }
 
         public void apply()
-        {
-            var arr = manager.getAttributeValues();
-            values = Array.ConvertAll(arr, int.Parse); 
+        {           
+            values = Array.ConvertAll(manager.getAttributeValues(), int.Parse); 
             min = values.Min();
             max = values.Max();
             generateSteps();

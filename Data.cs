@@ -15,6 +15,7 @@ namespace Anonyimization
         public Dictionary<string, string> attributes = new Dictionary<string, string>();
         public List<string> quasiIdentifiers = new List<string>();
         public DataTable data = new DataTable();
+        public DataTable originalData = new DataTable();
         private Data() {}
         private static Data instance;
         public string Delimiter { get; set; }
@@ -67,6 +68,7 @@ namespace Anonyimization
                     newRow[arr[0][j].ToString()] = arr[i][j];
                 data.Rows.Add(newRow);
             }
+            originalData = data.Copy();
             return;     
         }
 

@@ -5,7 +5,7 @@ using System.Data;
 
 namespace Anonyimization
 {
-    class CharacterMasking : AnonymizationTechnique
+    class CharacterMasking : IAnonymizationTechnique
     {
         private AnonymizationTechniquesManager manager;
         public string maskingChar;

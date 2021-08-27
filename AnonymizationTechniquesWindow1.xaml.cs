@@ -72,5 +72,23 @@ namespace Anonyimization
             PseudonymizationWindow window2 = new PseudonymizationWindow();
             window2.Show();
         }
+
+        private void btnRetrieveColumn_Click(object sender, RoutedEventArgs e)
+        {
+            RetrieveColumnWindow window2 = new RetrieveColumnWindow();
+            window2.Show();
+        }
+
+        private void btnLDiversity_Click(object sender, RoutedEventArgs e)
+        {
+            LDiversityWindow window2 = new LDiversityWindow();
+            window2.Show();
+        }
+
+        private void btnPerturbation_Click(object sender, RoutedEventArgs e)
+        {
+            PerturbationWindow window2 = new PerturbationWindow();
+            window2.Show();
+        }
     }
 }

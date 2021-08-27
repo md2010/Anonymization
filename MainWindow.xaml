@@ -6,16 +6,17 @@
         xmlns:local="clr-namespace:Anonyimization"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="Azure">
+    <Grid>
 
-        <Button Name="btnUpload" Content="Učitaj dokument" Click="BtnUploadFile_Click" HorizontalAlignment="Left" Margin="601,191,0,0" VerticalAlignment="Top" Width="130" Height="42" Background="#FFC3A8A8" FontSize="14"/>
-        <DataGrid Name="dataGrid" ItemsSource="{Binding}" Margin="45,63,0,63" HorizontalAlignment="Left" Width="504" Background="#FFECECEC" AutoGenerateColumns="True"/>
+        <Button Name="btnUpload" Content="Učitaj dokument" Click="BtnUploadFile_Click" HorizontalAlignment="Left" Margin="634,266,0,0" VerticalAlignment="Top" Width="130" Height="42" Background="#FFC3A8A8" FontSize="14"/>
+        <DataGrid Name="dataGrid" ItemsSource="{Binding}" Margin="45,63,0,63" HorizontalAlignment="Left" Width="504" Background="#FF4F646E" >
+        </DataGrid>
         <Button Content="Dalje" Name="btnNext" Click="ButtonNext1_Click" IsEnabled="false" HorizontalAlignment="Left" Margin="634,329,0,0" VerticalAlignment="Top" Width="130" Height="42" Background="#FFA9CFB0" RenderTransformOrigin="0.229,-0.963"/>
-        <ComboBox HorizontalAlignment="Left" Margin="601,118,0,0" VerticalAlignment="Top" Width="120" Name="cbDelimiter"  SelectionChanged="ComboBox_SelectionChanged" Height="25">
+        <ComboBox HorizontalAlignment="Left" Margin="601,118,0,0" VerticalAlignment="Top" Width="120" Name="cbDelimiter"  SelectionChanged="ComboBox_SelectionChanged" Height="25" BorderBrush="#FF682828" Foreground="#FF1B1A1A">
             <ComboBoxItem Name="dotComma">;</ComboBoxItem>
             <ComboBoxItem Name="comma">,</ComboBoxItem>
         </ComboBox>
-        <Label Content="Odaberi razdjelnik" HorizontalAlignment="Left" Margin="601,87,0,0" VerticalAlignment="Top" Width="130" FontSize="14"/>
+        <Label Content="Odaberi razdjelnik" HorizontalAlignment="Left" Margin="601,87,0,0" VerticalAlignment="Top" Width="130" FontSize="14" FontWeight="Normal" FontStyle="Normal" BorderBrush="#FF724B4B"/>
 
     </Grid>
 </Window>

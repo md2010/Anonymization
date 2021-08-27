@@ -16,6 +16,7 @@ namespace Anonyimization
     public partial class KAnonymityWindow : Window
     {      
         private KAnonymity kAnonymity;
+
         public KAnonymityWindow()
         {
             InitializeComponent();

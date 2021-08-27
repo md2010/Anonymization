@@ -40,7 +40,15 @@ namespace Anonyimization
                      .Select(row => row[SelectedAttribute].ToString())
                      .ToArray();
             return attributeValues;
-        }       
+        }   
+        
+        private string[] getOriginalAttributeValues()
+        {
+            var attributeValues = data.originalData.Rows.OfType<DataRow>()
+                     .Select(row => row[SelectedAttribute].ToString())
+                     .ToArray();
+            return attributeValues;
+        }
 
         public void deleteAttribute()
         {
@@ -61,6 +69,15 @@ namespace Anonyimization
         public void updateData()
         {           
             data.data = workingVersionData.Copy();
+        }
+
+        public void retrieveColumn()
+        {
+            var values = getOriginalAttributeValues();
+            for (int i = 0; i < workingVersionData.Rows.Count; i++)
+            {
+                workingVersionData.Rows[i][SelectedAttribute] = values[i];
+            }
         }
 
     }
