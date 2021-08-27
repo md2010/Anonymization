@@ -43,12 +43,12 @@ namespace Anonyimization
 
             IEnumerable<string> columnNames = data.Columns.Cast<DataColumn>().
                                               Select(column => column.ColumnName);
-            sb.AppendLine(string.Join(",", columnNames));
+            sb.AppendLine(string.Join(Delimiter, columnNames));
 
             foreach (DataRow row in data.Rows)
             {
                 IEnumerable<string> fields = row.ItemArray.Select(field => field.ToString());
-                sb.AppendLine(string.Join(",", fields));
+                sb.AppendLine(string.Join(Delimiter, fields));
             }
 
             File.WriteAllText(filePath, sb.ToString());

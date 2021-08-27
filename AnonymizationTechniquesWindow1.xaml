@@ -15,12 +15,12 @@
         <Button Content="Zamjena (permutacija)" Click="ButtonPermutation_Click"  HorizontalAlignment="Left" Margin="255,119,0,0" VerticalAlignment="Top" FontSize="16" Height="40" Width="168" Background="#FFDED6CC"/>
         <Button Content="Početna" Click="ButtonHome_Click" HorizontalAlignment="Left" Margin="158,356,0,0" VerticalAlignment="Top" Width="106" Height="51" FontSize="14" Background="#FFC3A8A8" RenderTransformOrigin="1.533,0.77"/>
         <Button Content="Uklanjanje zapisa" Click="ButtonRecordSuppression_Click" HorizontalAlignment="Left" Margin="65,177,0,0" VerticalAlignment="Top" Height="40" Width="168" FontSize="16" Background="#FFDED6CC"/>
-        <Button Content="K-anonimnost" Click="ButtonKAnonyimity_Click" HorizontalAlignment="Left" Margin="569,61,0,0" VerticalAlignment="Top" Width="116" Height="38" FontSize="16" Background="#FFDED6CC"/>
+        <Button Content="K-anonimnost" Click="ButtonKAnonyimity_Click" HorizontalAlignment="Left" Margin="569,61,0,0" VerticalAlignment="Top" Width="116" Height="38" FontSize="16" Background="#FFBB9482"/>
         <Label Content="Mjerila anonimiziacije" HorizontalAlignment="Left" Margin="536,22,0,0" VerticalAlignment="Top" Width="182" FontSize="18" Background="{x:Null}"/>
         <Button Content="Dalje" Click="ButtonNext_Click" HorizontalAlignment="Left" Margin="537,356,0,0" VerticalAlignment="Top" Width="106" Height="48" FontSize="14" Background="#FFA9CFB0"/>
         <Button Content="Pseudonimizacija" Click="ButtonPseudonymization_Click" HorizontalAlignment="Left" Margin="255,177,0,0" VerticalAlignment="Top" Height="40" Width="168" FontSize="16" Background="#FFDED6CC"/>
-        <Button Name="btnRetrieveColumn" Click="btnRetrieveColumn_Click" Content="Vrati originalne vrijednosti" HorizontalAlignment="Center" Margin="0,356,0,0" VerticalAlignment="Top" Width="185" Height="48" FontSize="14" Background="#FFDED6CC"/>
-        <Button Name="btnLDiversity" Click="btnLDiversity_Click" Content="L-ranolikost" HorizontalAlignment="Left" Margin="569,121,0,0" VerticalAlignment="Top" Width="116" Height="38" FontSize="16" Background="#FFDED6CC"/>
+        <Button Name="btnRetrieveColumn" Click="btnRetrieveColumn_Click" Content="Vrati originalne vrijednosti" HorizontalAlignment="Center" Margin="0,356,0,0" VerticalAlignment="Top" Width="185" Height="48" FontSize="14" Background="#FF9E9A94"/>
+        <Button Name="btnLDiversity" Click="btnLDiversity_Click" Content="L-ranolikost" HorizontalAlignment="Left" Margin="569,121,0,0" VerticalAlignment="Top" Width="116" Height="38" FontSize="16" Background="#FFBB9482"/>
         <Button Name="btnPerturbation" Click="btnPerturbation_Click" Content="Perturbacija" HorizontalAlignment="Left" Margin="158,237,0,0" VerticalAlignment="Top" Width="170" Height="40" Background="#FFDED6CC" FontSize="16"/>
 
     </Grid>

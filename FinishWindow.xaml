@@ -8,7 +8,12 @@
         Title="FinishWindow" Height="450" Width="800">
     <Grid>
         <DataGrid Name="dataGrid" Margin="27,18,295,18" ItemsSource="{Binding data}"/>
-        <Button Content="Izvezi CSV dokument" Click="ButtonExport_Click" HorizontalAlignment="Left" Margin="570,0,0,0" VerticalAlignment="Center" Height="45" Width="159" FontSize="16" Background="#FFA9CFB0"/>
+        <ComboBox SelectionChanged="cbDelimiter_SelectionChanged" HorizontalAlignment="Left" Margin="565,169,0,0" VerticalAlignment="Top" Width="120" Name="cbDelimiter" Height="25" BorderBrush="#FF682828" Foreground="#FF1B1A1A">
+            <ComboBoxItem Name="dotComma">;</ComboBoxItem>
+            <ComboBoxItem Name="comma">,</ComboBoxItem>
+        </ComboBox>
+        <Button Name="btnExport" Content="Izvezi CSV dokument" Click="ButtonExport_Click" HorizontalAlignment="Left" Margin="565,232,0,0" VerticalAlignment="Top" Height="45" Width="159" FontSize="16" Background="#FFA9CFB0" IsEnabled="False"/>
+        <Label Content="Odaberi razdjelnik" HorizontalAlignment="Left" Margin="565,135,0,0" VerticalAlignment="Top" Width="139" FontSize="14"/>
 
     </Grid>
 </Window>

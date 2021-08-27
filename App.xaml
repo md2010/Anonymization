@@ -7,12 +7,13 @@
 
         <Style TargetType="DataGrid">
             <Setter Property="Background" Value="#FFE7EDF0" />
-            <Setter Property="AlternatingRowBackground" Value="#FFE7EDF0" />
-            <Setter Property="BorderBrush" Value="#FF788585"/>
+            <Setter Property="AlternatingRowBackground" Value="#f9fbdf" />
+            <Setter Property="BorderBrush" Value="#FF788585"/> 
             <Setter Property="Foreground" Value="Black" />
             <Setter Property="VerticalGridLinesBrush" Value="#FF788585" />
             <Setter Property="HorizontalGridLinesBrush" Value="#FF788585" />
             <Setter Property="BorderThickness" Value="0 0 0 0" />
+            <Setter Property="Padding" Value="3" />
         </Style>
         <Style TargetType="DataGridColumnHeader">
             <Setter Property="Background" Value="#FFE7EDF0" />
@@ -22,12 +23,13 @@
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Padding" Value="3" />
-            <Setter Property="BorderThickness" Value="0.3 0 0 0.3" />
+            <Setter Property="BorderThickness" Value="0 0.3 0.3 0" />
         </Style>
         <Style TargetType="DataGridCell">
             <Setter Property="Height" Value="22" />
             <Setter Property="Opacity" Value="0.9" />
             <Setter Property="BorderThickness" Value="0.1 0.1 0.1 0.1" />
+            <Setter Property="Padding" Value="3" />
         </Style>
 
         <Style TargetType="Grid">
@@ -37,6 +39,11 @@
         <Style TargetType="Button">
             <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="BorderBrush" Value="#FFE0D0D0" />
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5" />
+                </Style>
+            </Style.Resources>
         </Style>
 
         <Style TargetType="ComboBox">
@@ -45,6 +52,7 @@
 
         <Style TargetType="Label">
             <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Arial" />
         </Style>
 
         <Style TargetType="CheckBox">

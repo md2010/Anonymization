@@ -22,7 +22,14 @@ namespace Anonyimization
             InitializeComponent();
             data = Data.GetInstance();
             dataGrid.ItemsSource = data.data.DefaultView;
-            DataContext = data;
+            DataContext = data;          
+        }
+
+        private void cbDelimiter_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBoxItem typeItem = (ComboBoxItem)cbDelimiter.SelectedItem;
+            data.Delimiter = typeItem.Content.ToString();
+            btnExport.IsEnabled = true;
         }
 
         private void ButtonExport_Click(object sender, RoutedEventArgs e)
@@ -32,5 +39,6 @@ namespace Anonyimization
             string filePath = fileDialog.FileName;
             data.exportCSV(filePath);
         }
+        
     }
 }
