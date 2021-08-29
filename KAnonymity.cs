@@ -42,14 +42,9 @@ namespace Anonyimization
                         counter++;
                     }
                 }
-                if (equivalenceClass.Rows.Count > k)
+                if (equivalenceClass.Rows.Count >= k)
                 {
-                    addToAnonymizedTable(equivalenceClass);
-                    removeSurplus(counter);
-                }
-                else if (equivalenceClass.Rows.Count == k)
-                {
-                    addToAnonymizedTable(equivalenceClass); 
+                    addToAnonymizedTable(equivalenceClass);                    
                 }
                 removeEquals(counter);
             }
@@ -62,18 +57,6 @@ namespace Anonyimization
                 anonymizedTable.ImportRow(row);
             }
         }
-        private void removeSurplus(int addedRows)
-        {
-            int surplus = addedRows - k;          
-            int i = anonymizedTable.Rows.Count - 1;
-            int counter = 0;
-            while (counter < surplus)
-            {
-                anonymizedTable.Rows.Remove(anonymizedTable.Rows[i]);
-                i--;
-                counter++;
-            }
-        }       
 
         public void save()
         {
