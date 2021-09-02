@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
@@ -49,12 +49,8 @@ namespace Anonyimization
                         equivalenceClass.ImportRow(dataTable.Rows[j]);
                         counter++;
                     }
-                }
-                if (equivalenceClass.Rows.Count < l)
-                {
-                    return false;
-                }
-                else if (!isDiverse(equivalenceClass))
+                }               
+                if (!isDiverse(equivalenceClass))
                 {
                     return false;
                 }
@@ -70,7 +66,7 @@ namespace Anonyimization
             {
                 sensitiveValues.Add(equivalenceClass.Rows[i][SensitiveAttribute].ToString());
             }
-            return sensitiveValues.Distinct().Count() == sensitiveValues.Count();
+            return sensitiveValues.Distinct().Count() >= l;
         }
     }
 }
